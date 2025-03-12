@@ -185,8 +185,8 @@ Fine-tuning improves the accuracy of GPT-4 for specific codebases or requirement
 ## Recommendations
 
 - **AI Foundry**: Use for testing and tracking LLM interactions.
-- Test different prompts across various models (e.g., GPT-4o, o3-mini).
-- Experiment with deployment settings (e.g., temperature).
+  - Test different prompts across various models (e.g., GPT-4o, o3-mini).
+  - Experiment with deployment settings (e.g., temperature).
 - **Static Analysis Tools**: Analyze code dependencies and structure before conversion.
 - **Human Review**: Always include a final human review stage to ensure code quality and correctness.
 
