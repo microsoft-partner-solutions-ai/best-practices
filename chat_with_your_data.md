@@ -15,7 +15,7 @@ There are three independent processes, each illustrated separately:
 ## Data Ingestion  
 ### Architecture 1 (Push)  
 
-![Push Architecture](../assets/chat_with_data1.png)
+![Push Architecture](/assets/chat_with_data1.png)
 
 ### Components  
 - **Azure Data Factory**: Azure Data Factory allows you to create data pipelines and data flows easily.  
@@ -59,7 +59,7 @@ There are three independent processes, each illustrated separately:
 ## Real-time Serving  
 ### Architecture  
 
-![Serving Architecture](../assets/chat_with_data2.png)
+![Serving Architecture](/assets/chat_with_data2.png)
 
 
 ### Components  
@@ -214,7 +214,7 @@ Depending on the nature of the tasks, separating Azure Functions may be a better
 ## LLMOps  
 LLMOps ensures that the LLM-based application remains relevant and accurate as user interactions evolve.  
 
-![LLMOps Architecture](../assets/chat_with_data3.png)
+![LLMOps Architecture](/assets/chat_with_data3.png)
 
 ### Components  
 - **CosmosDB**: Stores logged conversations and user feedback.  
