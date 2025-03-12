@@ -1,8 +1,8 @@
 # Mitigating Hallucinations in Large Language Models (LLMs) with Azure AI Services
 
 *Authors:*
-- *Ellie Nosrat, Principal AI Solution Architect*
-- *Lauren Tran, Principal AI Solution Architect*
+- *Ellie Nosrat, Principal AI Partner Solution Architect*
+- *Lauren Tran, Principal AI Partner Solution Architect*
 
 ## 🎯 Overview and Objectives
 
