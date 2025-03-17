@@ -26,7 +26,7 @@ However, successfully integrating GenAI into constrained optimization requires c
 
 Let’s consider a specific scenario – **AI-assisted scheduling for college courses** – to illustrate concepts, implementation, and best practices for solving a constrained optimization problem with **Azure OpenAI o-series reasoning models**. 
 
-For this use case, GenAI can help recommend courses based on major, course prerequisites, student data, and student preferences. The following architecture illustrates implementing a course scheduling system with a multi-agent solution, leveraging the **Reflection pattern** outlined here: [Microsoft AutoGen Reflection](#).
+For this use case, GenAI can help recommend courses based on major, course prerequisites, student data, and student preferences. The following architecture illustrates implementing a course scheduling system with a multi-agent solution, leveraging the **Reflection pattern** outlined here: [Microsoft AutoGen Reflection](https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/design-patterns/reflection.html).
 
 The following architecture diagram illustrates an example implementation of this solution, where Azure SQL Database is leveraged to store student information and course data.
 
