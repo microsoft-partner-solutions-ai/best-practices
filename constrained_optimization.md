@@ -3,6 +3,7 @@
 *Authors:*
 - *Ellie Nosrat, Principal AI Partner Solution Architect*
 - *Lauren Tran, Principal AI Partner Solution Architect*
+- *Melody Yin, AI Partner Solution Architect*
 
 Constrained optimization problems arise in numerous domains, from scheduling and logistics to financial planning and resource allocation. By incorporating Generative AI (GenAI) into these complex decision-making tasks, organizations can enhance efficiency, scalability, and adaptability. However, leveraging GenAI in constrained optimization scenarios requires strategic design and implementation to balance accuracy, speed, and reliability.
 
@@ -33,17 +34,22 @@ The following architecture diagram illustrates an example implementation of this
 ![Architecture Diagram](/assets/constrained_optimization.png)
 
 
+> 🔎 **Note:** Real-world optimization scenarios often involve many more constraints than those shown in simplified examples. For demonstration and Proof of Concept purposes, it is recommended to start with a scoped problem that highlights the most impactful variables and constraints. This approach accelerates learning and allows stakeholders to evaluate solution viability before expanding to full production complexity.
+
+
 ### 1. User Query
-The student provides details such as their major, number of courses they want to take, and preferences (e.g., _“I am a computer science major, and I'd like to take 3 courses next semester. I prefer morning courses”_).
+The student provides details such as their major, number of courses they want to take, and preferences (e.g., _“I am a computer science major, and I'd like to take 3 major courses and 1 elective next semester. I prefer morning and in-person courses”_).
 
 ### 2. Scheduling Agent
 The student’s request gets routed to the first agent, which queries a datastore for available courses. With the appropriate grounding data, the agent sends the student query and courses to **Azure OpenAI** to generate a course schedule.
 
 #### System Message:
 ```
-You are a scheduler. You recommend a student's schedule based on the courses provided. Work with the reviewer to ensure your proposed schedule has no conflicts and aligns with the student's major and preferences.
+You are a scheduler. You recommend a student's schedule based on the courses provided.
+Work with the reviewer to ensure your proposed schedule has no conflicts and aligns with the student's major and preferences.
 
-If there are no course combinations that work, do not make up courses or times. Respond that you cannot meet the requirements and suggest alternative courses.
+If there is no course combination that work, do not make up courses or times.
+Respond that you cannot meet the requirements, provide a reason, and suggest alternative courses.
 ```
 
 ### 3. Reviewer Agent
