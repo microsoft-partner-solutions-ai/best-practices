@@ -1,4 +1,4 @@
-# Best Practices for Structured Data Extraction from Legal Documents Using Azure OpenAI
+# Best Practices for Structured Extraction from Documents Using Azure OpenAI
 
 ## Overview
 
