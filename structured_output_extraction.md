@@ -1,5 +1,9 @@
 # Best Practices for Structured Extraction from Documents Using Azure OpenAI
 
+*Authors:*
+- *Ellie Nosrat, Principal AI Partner Solution Architect*
+- *Lauren Tran, Principal AI Partner Solution Architect*
+
 ## Overview
 
 In a recent project, a customer needed to extract structured data from legal documents to populate a standardized form. The legal documents varied in length and structure, and the customer required consistent and accurate outputs that mapped directly to the expected form schema. The implemented solution leveraged Azure OpenAI to iteratively process document chunks and update the form output dynamically. A key component to successfully extract the correct output was using **Structured Outputs** to enforce the desired output fields to populate the form.
